@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/cm_bkg"
+    android:id="@+id/startime_main_RL"
+    tools:context="app.com.classmates.EnterTime">
+
+    <RelativeLayout
+        android:id="@+id/startime_title_bar_RL"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:id="@+id/startime_back_RL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/startime_back_IV"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/whiteback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New Study"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/startime_back_IV"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/startime_name_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startime_title_bar_RL"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Select Start Time &amp; Date"
+            android:textColor="@android:color/white" />
+
+
+        <RelativeLayout
+            android:id="@+id/startime_name_RL"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/startime_name_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingRight="20dp"
+                android:editable="false"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:hint="Select Start Time" />
+
+            <ImageView
+                android:id="@+id/starttime_selectdate_IV"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/whitewatch"
+                android:paddingBottom="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/time_eg_LL"
+        android:layout_below="@+id/startime_name_LL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="For Example (Start Time &amp; Date: "
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="7/30/2016 10:00AM"
+            android:textStyle="bold"
+            android:textColor="@color/foreground" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text=")"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/starttime_next_TV"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/nextbg"
+        android:layout_margin="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/time_eg_LL"
+        android:text="DONE"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/groupchat_main_RL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/cm_bkg"
+    tools:context="app.com.classmates.GroupChat">
+
+    <RelativeLayout
+        android:id="@+id/chat_name_title_bar_RL"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:id="@+id/chat_participantdetail_RL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/chat_back_IV"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:padding="3dp"
+                android:src="@drawable/whiteback" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/chat_back_IV"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/groupchat_title_name_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Group Name"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/groupchat_datetime_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mon 27may,2016 12:33am"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/show_participants_IV"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:src="@drawable/participant" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/chat_LV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textandsend_LL"
+        android:layout_below="@+id/chat_name_title_bar_RL"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:nestedScrollingEnabled="true"
+        android:scrollbars="none"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:id="@+id/textandsend_LL"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.7"
+            android:background="@drawable/loginborder">
+
+            <EditText
+                android:id="@+id/writechattext_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Type text here"
+                android:lines="3"
+                android:maxHeight="100dp"
+                android:padding="5dp"
+                android:soundEffectsEnabled="true"
+                android:textSize="15sp" />
+
+            <!--  <ImageView
+                  android:id="@+id/chat_camera_IV"
+                  android:layout_width="35dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginRight="5dp"
+                  android:src="@drawable/chat_camera" />
+  -->
+            <!--  <ImageView
+                  android:id="@+id/chat_smile_IV"
+                  android:layout_width="30dp"
+                  android:layout_height="match_parent"
+                  android:layout_marginLeft="10dp"
+                  android:src="@drawable/smile"/>
+  -->
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/send_written_msg_IV"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.3"
+            android:paddingBottom="7dp"
+            android:src="@drawable/send" />
+    </LinearLayout>
+
+</RelativeLayout>

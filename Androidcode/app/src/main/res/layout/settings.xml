@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting_main_RL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/cm_bkg"
+    tools:context="app.com.classmates.Settings">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/toptitle_RL"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="@color/background">
+
+                <RelativeLayout
+                    android:id="@+id/userprofilepic_RL"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="40dp">
+
+                    <RelativeLayout
+                        android:id="@+id/img"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/whiteborder"
+                        android:padding="1dp">
+
+                        <ImageView
+                            android:id="@+id/setting_pp_RIV"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/dummy_single" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/camra" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/editdate_RL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userprofilepic_RL"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp">
+
+                    <EditText
+                        android:id="@+id/settings_username_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="true"
+                        android:enabled="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:text="ANANT"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!--  <ImageView
+                          android:id="@+id/pen_imageView"
+                          android:layout_width="30dp"
+                          android:layout_height="25dp"
+                          android:layout_centerVertical="true"
+                          android:layout_toRightOf="@+id/settings_username_TV"
+                          android:src="@drawable/pencil" />-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_above="@+id/userprofilepic_RL"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:id="@+id/setting_back_IV"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:src="@drawable/whiteback" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Settings"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/saveprofile_TV"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/loginborder"
+                        android:gravity="center"
+                        android:text="Save"
+                        android:visibility="gone"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <!-- <TextView
+                     android:id="@+id/usersub_TV"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="(Computer Science)"
+                     android:textColor="@android:color/white"
+                     android:layout_below="@+id/settings_username_TV"
+                     android:layout_centerHorizontal="true"/>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=" It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                     android:textColor="@color/dark_grey"
+                     android:layout_below="@+id/usersub_TV"
+                     android:layout_marginLeft="30dp"
+                     android:layout_marginRight="30dp"
+                     android:textSize="12sp"
+                     android:layout_marginTop="10dp"
+                     android:gravity="center"
+                     android:layout_centerHorizontal="true"/>-->
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toptitle_RL"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/setting_addclass_RL"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:id="@+id/addcls_IV"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/plus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/addcls_IV"
+                        android:text="Add Class"
+                        android:textColor="@android:color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="60dp"
+                        android:background="@color/gray3" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/remove_sett_RL"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/removecls_IV"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/delete" />
+
+                    <TextView
+                        android:id="@+id/removeclass_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/removecls_IV"
+                        android:text="Remove Class"
+                        android:textColor="@android:color/white" />
+
+                    <app.com.classmates.multipleclasses.HorizontalListView
+                        android:id="@+id/removeclass_HLV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/nextlist_IV"
+                        android:layout_toRightOf="@+id/removeclass_TV"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:scrollIndicators="bottom"
+                        android:scrollbarStyle="outsideOverlay"
+                        android:scrollbars="horizontal"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/nextlist_IV"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="7dp"
+                        android:src="@drawable/next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="60dp"
+                        android:background="@color/gray3" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/invite_frnd_RL"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:id="@+id/addcls_IV"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/invite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/addcls_IV"
+                        android:text="Invite a Friend to ClassMates!"
+                        android:textColor="@android:color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="60dp"
+                        android:background="@color/gray3" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_logout_RL"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:id="@+id/logout_IV"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/logout" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/logout_IV"
+                        android:text="Logout"
+                        android:textColor="@android:color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="60dp"
+                        android:background="@color/gray3" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

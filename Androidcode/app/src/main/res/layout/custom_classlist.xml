@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/custom_classlist_LL"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/greyborder">
+
+        <RelativeLayout
+            android:id="@+id/mar_bg_RL"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/maroon_back">
+
+            <TextView
+                android:id="@+id/hot_name_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="75dp"
+                android:layout_centerVertical="true"
+                android:textSize="17sp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/join_study_TV"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="5dp"
+                android:text="JOIN"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:background="@drawable/whiteborder"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <!-- <TextView
+             android:id="@+id/hot_datecreated_TV"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Date Created: 20/06/2016"
+             android:layout_marginLeft="75dp"
+             android:layout_marginTop="50dp"
+             android:singleLine="true"
+             android:textColor="@color/grey3"/>-->
+
+
+        <RelativeLayout
+            android:id="@+id/totalparticipants_RL"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginTop="3.25dp"
+            android:layout_below="@+id/mar_bg_RL">
+
+            <TextView
+                android:id="@+id/parti_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Participants"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/gray3" />
+
+            <TextView
+                android:id="@+id/hot_parti_count_TV"
+                android:layout_width="35dp"
+                android:layout_height="22dp"
+                android:text=""
+                android:layout_below="@+id/parti_TV"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/greysolid"
+                android:textColor="@color/dark_grey"
+                android:layout_marginTop="5dp"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/hot_classuser_event_RIV"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dummy_single"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hot_classuser_event_RIV"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:textColor="@color/gray3"
+                    android:text="Course Name: " />
+
+                <TextView
+                    android:id="@+id/hot_coursename_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_grey"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:textColor="@color/gray3"
+                    android:text="Topic: " />
+
+                <TextView
+                    android:id="@+id/hot_topicname_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_grey"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.77"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_gravity="top|center"
+                        android:src="@drawable/clock" />
+
+                    <TextView
+                        android:id="@+id/classlist_time_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/gray3"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/hot_locationame_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_grey"
+                        android:singleLine="true"
+                        android:text="" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

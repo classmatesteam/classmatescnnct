@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <declare-styleable name="CropOverlayView">
+        <attr name="guideLines" format="boolean" />
+        <attr name="drawCircle" format="boolean" />
+        <attr name="marginTop" format="dimension" />
+        <attr name="marginSide" format="dimension" />
+        <attr name="minWidth" format="dimension" />
+        <attr name="maxWidth" format="dimension" />
+        <attr name="borderColor" format="color" />
+    </declare-styleable>
+
+</resources>

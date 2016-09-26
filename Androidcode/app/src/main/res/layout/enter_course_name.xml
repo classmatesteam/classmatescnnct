@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/event_main_RL"
+    android:background="@mipmap/cm_bkg"
+    tools:context=".EnterCourseName">
+
+    <RelativeLayout
+        android:id="@+id/event_title_bar_RL"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:id="@+id/event_back_RL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/event_back_IV"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/whiteback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New Study"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/event_back_IV"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/event_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_title_bar_RL"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Select Course Name"
+            android:textColor="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <app.com.classmates.multipleclasses.HorizontalListView
+                android:id="@+id/select_class_HLV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:scrollIndicators="bottom"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="horizontal" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/loadingIndicatorViewR"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="visible"
+                app:indicator="BallSpinFadeLoader"
+                android:layout_centerInParent="true"
+                app:indicator_color="@color/foreground" />
+
+        </RelativeLayout>
+
+        <!-- <EditText
+             android:id="@+id/eventcourse_name_ET"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:textSize="15sp"
+             android:singleLine="true"
+             android:textAllCaps="true"
+             android:maxLength="6"
+             android:digits="QWERTYUIOPLKJHGFDSAZXCVBNM1234567890"
+             android:inputType="textCapCharacters"
+             android:imeOptions="actionNext"
+             android:layout_marginRight="20dp"
+             android:textColor="@android:color/white"
+             android:textColorHint="@android:color/white"
+             android:hint="Course Name" />
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:orientation="horizontal">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="12sp"
+                 android:text="For Example (Course name: "
+                 android:textColor="@android:color/white"/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="12sp"
+                 android:text="ENG323"
+                 android:textStyle="bold"
+                 android:textColor="@color/background"/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="12sp"
+                 android:text=")"
+                 android:textColor="@android:color/white"/>
+         </LinearLayout>
+ -->
+    </LinearLayout>
+
+    <!-- <TextView
+         android:id="@+id/event_next_TV"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:background="@drawable/nextbg"
+         android:layout_margin="40dp"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@+id/event_LL"
+         android:text="NEXT"
+         android:gravity="center"
+         android:textColor="@android:color/white"
+         android:textStyle="bold"/>-->
+
+</RelativeLayout>

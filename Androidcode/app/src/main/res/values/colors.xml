@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="fbblue">#2b69b6</color>
+    <!--<color name="light_blue">#29e0ff</color>-->
+    <color name="light_blue">#06acba</color>
+    <!--<color name="foreground">#06acba</color>-->
+    <!--<color name="foreground">#053c51</color>-->
+    <color name="foreground">#004a5e</color>
+    <!--<color name="background">#0bbecd</color>-->
+    <!--<color name="background">#006171</color>-->
+    <color name="background">#248a81</color>
+    <color name="dark_grey">#494949</color>
+    <color name="gray3">#6d6d6d</color>
+    <color name="gray5">#b6b6b6</color>
+</resources>

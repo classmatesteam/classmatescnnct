@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/unjoin_dia_main_LL"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:padding="1dp"
+        android:background="@drawable/blueborder">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/cm_bkg" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/unjoin_Sample_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you want to Unjoin this study?"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp" />
+
+        <View
+            android:id="@+id/vieww"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/white"
+            android:layout_below="@+id/unjoin_Sample_TV" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_below="@+id/vieww"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/dia_unjoin_class"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="UNJOIN"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_below="@+id/vieww"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/dia_unjoin_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="CANCEL"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/vieww"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

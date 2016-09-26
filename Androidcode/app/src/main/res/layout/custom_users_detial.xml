@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/custom_users_main_LL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/userdetails_pic_RIV"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/dummy_single" />
+
+        <!-- <app.com.classmates.multipleclasses.RoundImageView
+             android:id="@+id/userdetails_pic_RIV"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:scaleType="fitCenter"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:src="@drawable/dummy_single"/>
+ -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/userdetails_pic_RIV">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usernamedetail_TV"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:text="ANANT" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

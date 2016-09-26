@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/custom_msgsdetail_main_LL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/cus_msg_detail_RL"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+        <ImageView
+            android:id="@+id/groupuser_pic_RIV"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dummy_single" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/groupuser_pic_RIV">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/groupusername_TV"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#b6b6b6"
+                android:singleLine="true"
+                android:text="ANANT" />
+
+            <TextView
+                android:id="@+id/event_timedetail_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tue 28June,2016 ,12:00 am"
+                android:textColor="#b6b6b6"
+                android:singleLine="true"
+                android:layout_below="@+id/groupusername_TV" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

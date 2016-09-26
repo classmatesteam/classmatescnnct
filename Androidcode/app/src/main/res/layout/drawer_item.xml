@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:id="@+id/draweritem_main_LL"
+    android:background="@drawable/drawershade">
+
+    <ImageView
+        android:id="@+id/drawer_pp_RIV"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/dummy_single"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:id="@+id/drawer_addclass_LL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selectoption">
+
+        <ImageView
+            android:id="@+id/drawer_addclass_IV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/white_addclass" />
+
+        <TextView
+            android:id="@+id/drawer_addclass_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="ADD CLASS"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/drawer_settings_LL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/drawer_settings_IV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/settings" />
+
+        <TextView
+            android:id="@+id/drawer_setting_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:textSize="13sp"
+            android:text="SETTINGS"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/drawer_invita_LL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/drawer_invita_IV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/invitation" />
+
+            <TextView
+                android:id="@+id/red_invite_count_TV"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:textSize="10sp"
+                android:text="2"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/white"
+                android:background="@drawable/circlered" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/drawer_invita_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:text="INVITES"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

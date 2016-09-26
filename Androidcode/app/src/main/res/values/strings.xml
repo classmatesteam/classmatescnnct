@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ClassMates</string>
+    <string name="cm_text">Find your CLASSMATES to get your HW\'s done REAL-TIME.</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="facebook_app_id">147349859005321</string>
+    <string name="gcm_defaultSenderId">770058111757</string>
+    <!--<string name="google_app_id">AIzaSyAYHPR-C_8oPxgRBt3xWrc-QZEpv2h_skA</string>-->
+    <string name="google_app_id">AIzaSyCiZenVCGcZCVps5mme7mNriY5FYOlsf0U</string>
+
+    <string-array name="locations">
+        <item>Select option</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="toast_crash">Something went wrong :( But no worries, a report has been sent to help fix the issue.</string>
+
+</resources>

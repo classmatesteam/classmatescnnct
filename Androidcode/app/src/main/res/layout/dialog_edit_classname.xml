@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/custom_edit_classname_main_LL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/loginborder"
+        android:layout_margin="10dp"
+        android:padding="1dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/cm_bkg" />
+
+        <TextView
+            android:id="@+id/editclass_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Class Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/edit_classname_ET"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/editclass_TV"
+            android:singleLine="true"
+            android:maxLength="6"
+            android:digits="QWERTYUIOPLKJHGFDSAZXCVBNM0987654321"
+            android:inputType="textCapCharacters"
+            android:layout_margin="20dp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/reset_classname_B"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="RESET"
+            android:textSize="15sp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/edit_classname_ET"
+            android:textColor="@color/background"
+            android:background="@drawable/blueborder" />
+
+        <Button
+            android:id="@+id/cancel_classname_B"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="CANCEL"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_below="@+id/edit_classname_ET"
+            android:textColor="@color/dark_grey"
+            android:background="@drawable/blueborder" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

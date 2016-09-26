@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "770058111757",
+    "firebase_url": "https://classmate-1358.firebaseio.com",
+    "project_id": "classmate-1358",
+    "storage_bucket": "classmate-1358.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770058111757:android:9f0a0a3430bb9ff3",
+        "android_client_info": {
+          "package_name": "app.com.classmates"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770058111757-n0k4gsouscr9k9h39o3eunqf9kk9usql.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "770058111757-7onk0jh0057u8m8ktk0upjtp4e3slfqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACscryMQnNV_Nt9vNvV5ZyUGXL-lD9M-A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

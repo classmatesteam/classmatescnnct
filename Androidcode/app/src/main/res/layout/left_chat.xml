@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/left_main_LL">
+
+    <TextView
+        android:id="@+id/addedto_chat_name_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:text="added"
+        android:textColor="@color/foreground"
+        android:textColorHighlight="@color/background"
+        android:padding="3dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/greysolid"
+        android:layout_centerInParent="true"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/msg_chat_name_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Brightroots"
+        android:visibility="gone"
+        android:paddingLeft="5sp"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/msgr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/chat_left"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+</LinearLayout>
