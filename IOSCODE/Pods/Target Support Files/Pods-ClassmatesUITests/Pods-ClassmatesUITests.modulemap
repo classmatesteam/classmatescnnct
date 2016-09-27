@@ -1,0 +1,6 @@
+framework module Pods_ClassmatesUITests {
+  umbrella header "Pods-ClassmatesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

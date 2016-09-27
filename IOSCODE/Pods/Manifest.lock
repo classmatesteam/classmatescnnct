@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (3.3.1)
+  - BRYXBanner (0.5.2):
+    - BRYXBanner/Core (= 0.5.2)
+  - BRYXBanner/Core (0.5.2)
+  - JSQMessagesViewController (7.2.0):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - Kanna (1.0.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - BRYXBanner
+  - JSQMessagesViewController
+  - Kanna (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  BRYXBanner: 5f0911d52e0a77e088f7ea7ddcdebd02afb7828a
+  JSQMessagesViewController: 73cab48aa92fc2d512f3b6724f3425cc47a19eb5
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  Kanna: 9f30945bbd293a609f698ea164687ccc0990ff60
+
+PODFILE CHECKSUM: 7f7602ee96a0c6afb147047a9fd1782cc36fb0bb
+
+COCOAPODS: 1.0.1
